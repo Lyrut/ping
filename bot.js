@@ -8,7 +8,7 @@ const client = new Client({
   ]
 });
 
-const userToWatch = "171671218188058625";
+const userToWatch = "1475740283537723474";
 const userToNotify = "268861229487882241";
 
 client.on("voiceStateUpdate", async (oldState, newState) => {
