@@ -16,7 +16,7 @@ client.on("voiceStateUpdate", async (oldState, newState) => {
   if (newState.member.id === userToWatch && newState.channelId !== null) {
 
     const user = await client.users.fetch(userToNotify);
-    user.send(`${newState.member.user.username} vient de rejoindre ${newState.channel.name}`);
+    user.send(`${newState.member.user.globalName} vient de rejoindre ${newState.channel.name}`);
 
   }
 
